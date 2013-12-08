@@ -1,10 +1,10 @@
 <Superformula>
 	<a1value>1.02</a1value>
-	<a2value>0.915</a2value>
+	<a2value>1.245</a2value>
 	<n1value>19.3</n1value>
-	<n2value>1.32</n2value>
+	<n2value>1.635</n2value>
 	<n3value>1.56</n3value>
-	<n4value>3</n4value>
-	<stepvalue>0.0508</stepvalue>
+	<n4value>0.87</n4value>
+	<stepvalue>0.02</stepvalue>
 <Superformula/>
 </Superformula>

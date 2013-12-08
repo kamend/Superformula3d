@@ -12,12 +12,14 @@ void testApp::setup(){
 	gui.add(n3value.setup("n3value", 1,0,3));
 	gui.add(n4value.setup("n4value", 1,0,3));
 	gui.add(stepvalue.setup("stepvalue", 0.05,0.02,0.9));
+	gui.add(drawWire.setup("Draw Wireframe", false));
+	gui.add(drawPoints.setup("Draw Points", false));
 	
 	gui.loadFromFile("Superformula.xml");
 	
 	guiRect = ofRectangle(gui.getPosition().x, gui.getPosition().y, gui.getWidth(), gui.getHeight());
 	
-//	light.setDiffuseColor(ofColor(255,0,0));
+
 	light.setDirectional();
 	light.setOrientation(ofVec3f(30,60,60));
 	
@@ -118,17 +120,29 @@ void testApp::draw(){
 	cam.begin();
 	ofPushMatrix();
 	
-
+	
 	glEnable(GL_DEPTH_TEST);
 	ofEnableLighting();light.enable();
-	mesh.setMode(OF_PRIMITIVE_TRIANGLES);
+	if(drawPoints) {
+		mesh.setMode(OF_PRIMITIVE_POINTS);
+		mesh.clearColors();
+		ofSetColor(255,255,255,150);
+		ofEnableAlphaBlending();
+		ofEnableBlendMode(OF_BLENDMODE_ALPHA);
+	} else {
+		ofDisableAlphaBlending();
+		mesh.setMode(OF_PRIMITIVE_TRIANGLES);
+	}
 	mesh.draw();
 	light.disable();ofDisableLighting();
 
-	mesh.clearColors();
-	ofSetColor(30,30,30,255);
-	mesh.drawWireframe();
 	
+	if(drawWire) {
+		mesh.clearColors();
+		ofSetColor(255,255,255,150);
+		mesh.drawWireframe();
+	}
+
 	glDisable(GL_DEPTH_TEST);
 
 	cam.end();

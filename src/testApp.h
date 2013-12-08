@@ -32,6 +32,8 @@ class testApp : public ofBaseApp{
 	ofxSlider<float> n3value;
 	ofxSlider<float> n4value;
 	ofxSlider<float> stepvalue;
+	ofxToggle drawWire;
+	ofxToggle drawPoints;
 
 
 	ofMesh mesh;	
