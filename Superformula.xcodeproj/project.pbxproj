@@ -27,6 +27,7 @@
 		E7E077E515D3B63C0020DFD4 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E077E415D3B63C0020DFD4 /* CoreVideo.framework */; };
 		E7E077E815D3B6510020DFD4 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E077E715D3B6510020DFD4 /* QTKit.framework */; };
 		E7F985F815E0DEA3003869B5 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7F985F515E0DE99003869B5 /* Accelerate.framework */; };
+		EE05BAD3185524B4000A660D /* ofxMeshUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE05BAD1185524B4000A660D /* ofxMeshUtils.cpp */; };
 		EE921D24185502A900687486 /* ofxBaseGui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE921D13185502A900687486 /* ofxBaseGui.cpp */; };
 		EE921D25185502A900687486 /* ofxButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE921D15185502A900687486 /* ofxButton.cpp */; };
 		EE921D26185502A900687486 /* ofxGuiGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE921D18185502A900687486 /* ofxGuiGroup.cpp */; };
@@ -92,6 +93,8 @@
 		E7E077E415D3B63C0020DFD4 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
 		E7E077E715D3B6510020DFD4 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
 		E7F985F515E0DE99003869B5 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = /System/Library/Frameworks/Accelerate.framework; sourceTree = "<absolute>"; };
+		EE05BAD1185524B4000A660D /* ofxMeshUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxMeshUtils.cpp; path = src/ofxMeshUtils.cpp; sourceTree = "<group>"; };
+		EE05BAD2185524B4000A660D /* ofxMeshUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxMeshUtils.h; path = src/ofxMeshUtils.h; sourceTree = "<group>"; };
 		EE921D13185502A900687486 /* ofxBaseGui.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxBaseGui.cpp; sourceTree = "<group>"; };
 		EE921D14185502A900687486 /* ofxBaseGui.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxBaseGui.h; sourceTree = "<group>"; };
 		EE921D15185502A900687486 /* ofxButton.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxButton.cpp; sourceTree = "<group>"; };
@@ -142,6 +145,7 @@
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
+				EE05BACD1855148C000A660D /* ofxMeshUtils */,
 				EE921D11185502A900687486 /* ofxGui */,
 			);
 			name = addons;
@@ -224,6 +228,15 @@
 				E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */,
 			);
 			name = openFrameworks;
+			sourceTree = "<group>";
+		};
+		EE05BACD1855148C000A660D /* ofxMeshUtils */ = {
+			isa = PBXGroup;
+			children = (
+				EE05BAD1185524B4000A660D /* ofxMeshUtils.cpp */,
+				EE05BAD2185524B4000A660D /* ofxMeshUtils.h */,
+			);
+			name = ofxMeshUtils;
 			sourceTree = "<group>";
 		};
 		EE921D11185502A900687486 /* ofxGui */ = {
@@ -355,6 +368,7 @@
 				EE921D29185502A900687486 /* ofxSlider.cpp in Sources */,
 				EE921D2B185502A900687486 /* ofxToggle.cpp in Sources */,
 				EE921D2A185502A900687486 /* ofxSliderGroup.cpp in Sources */,
+				EE05BAD3185524B4000A660D /* ofxMeshUtils.cpp in Sources */,
 				EE921D26185502A900687486 /* ofxGuiGroup.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

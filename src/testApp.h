@@ -32,12 +32,15 @@ class testApp : public ofBaseApp{
 	ofxSlider<float> n3value;
 	ofxSlider<float> n4value;
 	ofxSlider<float> stepvalue;
-	
 
-	ofMesh mesh;
-	
+
+	ofMesh mesh;	
 	ofVec3f sf3d(float x, float y);
 	ofEasyCam cam;
+	
+	ofLight light;
+	
+	vector<int> lastRow;
 	
 		
 };
