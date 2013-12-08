@@ -117,24 +117,17 @@ void testApp::draw(){
 
 	cam.begin();
 	ofPushMatrix();
-	//ofSetColor(255,255,255,255);
+	
+
 	glEnable(GL_DEPTH_TEST);
 	ofEnableLighting();light.enable();
 	mesh.setMode(OF_PRIMITIVE_TRIANGLES);
 	mesh.draw();
 	light.disable();ofDisableLighting();
 
-	
-//	ofCircle(sf3d(PI/stepvalue,PI/stepvalue),1);
-
-	
-	ofPushMatrix();
-
 	mesh.clearColors();
-	ofSetColor(255,30,30,255);
+	ofSetColor(30,30,30,255);
 	mesh.drawWireframe();
-	ofPopMatrix();
-	ofPopMatrix();
 	
 	glDisable(GL_DEPTH_TEST);
 
