@@ -26,7 +26,6 @@ class testApp : public ofBaseApp{
 	ofRectangle guiRect;
 	ofxSlider<float> a1value;
 	ofxSlider<float> a2value;
-	ofxSlider<float> bvalue;
 	ofxSlider<float> n1value;
 	ofxSlider<float> n2value;
 	ofxSlider<float> n3value;
@@ -34,6 +33,10 @@ class testApp : public ofBaseApp{
 	ofxSlider<float> stepvalue;
 	ofxToggle drawWire;
 	ofxToggle drawPoints;
+	
+	bool showGui;
+	
+	float n1target, n2target, n3target, n4target,a1target,a2target;
 
 
 	ofMesh mesh;	

@@ -1,10 +1,12 @@
 <Superformula>
-	<a1value>1.02</a1value>
-	<a2value>1.245</a2value>
-	<n1value>19.3</n1value>
-	<n2value>1.635</n2value>
-	<n3value>1.56</n3value>
-	<n4value>0.87</n4value>
-	<stepvalue>0.02</stepvalue>
+	<a1value>1.57975</a1value>
+	<a2value>1.02586</a2value>
+	<n1value>9.92683</n1value>
+	<n2value>1.9836</n2value>
+	<n3value>1.8189</n3value>
+	<n4value>0.597789</n4value>
+	<stepvalue>0.0596</stepvalue>
 <Superformula/>
+<Draw_Wireframe>1</Draw_Wireframe>
+	<Draw_Points>1</Draw_Points>
 </Superformula>
